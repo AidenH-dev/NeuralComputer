@@ -1,7 +1,7 @@
 # Incubation Chamber 
 > (Based on The Thought Emporiums [Meatcubator](https://github.com/thethoughtemporium/meatcubator#parts-list))\
 \
-The goal is to sutain the optimal conditionns that are condusive of mammalian cell growth. This means consistantly regulating and monitoring the CO<sub>2</sub> , humidity and temperature of the container.
+The goal is to sutain the optimal conditions that are condusive of mammalian cell growth. This means consistantly regulating and monitoring the CO<sub>2</sub> , humidity and temperature of the container.
 
 ## Parts 
 <img width="307" alt="image" src="https://github.com/AidenH-dev/NeroComputer/assets/109930537/23f2e404-c046-48f1-a07b-87beff714a5c">\
