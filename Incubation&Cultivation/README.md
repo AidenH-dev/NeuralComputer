@@ -36,7 +36,11 @@ _Parts that require more research_
 
 
 
+## Getting Started 
+> The total process will be broken down into individual managable goals 
 
+### Step 1 - Modifying the Incubator\
+Integrating the CO<sub>2</sub> and temp sensor. As well as testing the best locations withing the chamber to place the sensors and coding the basic logging and notifications into the microcontroller that will serve as the triggers to manage the CO<sub>2</sub> levels.  
 
 
 
