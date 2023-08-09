@@ -43,6 +43,7 @@ _Parts that require more research_
 Integrating the CO<sub>2</sub> and temp sensor. As well as testing the best locations withing the chamber to place the sensors and coding the basic logging and notifications into the microcontroller that will serve as the triggers to manage the CO<sub>2</sub> levels.  
 
 ### Step 2 - Adding CO<sub>2</sub> Control
+Hooking up the CO<sub>2</sub> canister and the relivant regulators and solenoid valvs. Then connecting it to the Pico.  
 
 # Positive Laminar Flow Hood 
 >(To be placed in different folder for the sanitation parts of the project)
