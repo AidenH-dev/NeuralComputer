@@ -42,8 +42,15 @@ _Parts that require more research_
 ### Step 1 - Modifying the Incubator
 Integrating the CO<sub>2</sub> and temp sensor. As well as testing the best locations withing the chamber to place the sensors and coding the basic logging and notifications into the microcontroller that will serve as the triggers to manage the CO<sub>2</sub> levels.  
 
+1. Pico CO<sub>2</sub> Sensor & OLED circuit (NEEDS WORK)
+
 ### Step 2 - Adding CO<sub>2</sub> Control
-Hooking up the CO<sub>2</sub> canister and the relivant regulators and solenoid valvs. Then connecting it to the Pico.  
+Hooking up the CO<sub>2</sub> canister and the relevant regulators and solenoid valvs. Then connecting it to the Raspberry Pico.
+
+### Step 3 - Logging and Wifi Connection (Optional)
+Adding functionality to the raspery pi that sends a log over wifi to an aws server that stores the sensor information in a postgresql database and then displays it through a private auth0 protected next js webapp. 
+
+
 
 # Positive Laminar Flow Hood 
 >(To be placed in different folder for the sanitation parts of the project)
