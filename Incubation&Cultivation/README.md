@@ -55,7 +55,49 @@ _Parts that require more research_
 ### Step 1 - Modifying the Incubator
 Integrating the CO<sub>2</sub> and temp sensor. As well as testing the best locations withing the chamber to place the sensors and coding the basic logging and notifications into the microcontroller that will serve as the triggers to manage the CO<sub>2</sub> levels.  
 
-1. Pico CO<sub>2</sub> Sensor & OLED circuit (NEEDS WORK)
+1. Pico CO<sub>2</sub> Sensor & OLED circuit (TECHINCALLY RUNS AN ERROR BC OF ONLINE SIM) (MISSING CARBON SENSOR)\
+   <img width="315" alt="image" src="https://github.com/AidenH-dev/NeuralComputer/assets/109930537/574e4f76-009d-436c-b171-fdb50f0b2da0">
+   ```cpp
+   #include "DHT.h"
+   #include <Adafruit_SSD1306.h>
+
+   #define DHTPIN 2
+   #define DHTTYPE DHT22
+
+   DHT dht(DHTPIN, DHTTYPE);
+   Adafruit_SSD1306 display(4);
+
+   void setup() {
+    Serial.begin(9600);
+    dht.begin();
+    display.begin(SSD1306_I2C_ADDRESS, OLED_RESET);
+    display.display();
+    delay(2000);
+    display.clearDisplay();
+   }
+
+   void loop() {
+    float humidity = dht.readHumidity();
+    float temp = dht.readTemperature();
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(WHITE);
+    display.setCursor(0, 0);
+    display.print("Temperature: ");
+    display.print(temp);
+    display.print("C");
+    display.setCursor(0, 10);
+    display.print("Humidity: ");
+    display.print(humidity);
+    display.print("%");
+    display.display();
+
+    delay(2000);
+   }
+   ```
+   
+
 
 ### Step 2 - Adding CO<sub>2</sub> Control
 Hooking up the CO<sub>2</sub> canister and the relevant regulators and solenoid valvs. Then connecting it to the Raspberry Pico.
